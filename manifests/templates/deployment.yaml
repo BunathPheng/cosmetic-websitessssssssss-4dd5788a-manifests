@@ -1,0 +1,25 @@
+---
+# Source: helm for kubernetes/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cosmetic-websitessssssssss-4dd5788a
+  labels:
+    app: cosmetic-websitessssssssss-4dd5788a
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: cosmetic-websitessssssssss-4dd5788a
+  template:
+    metadata:
+      labels:
+        app: cosmetic-websitessssssssss-4dd5788a
+    spec:
+      containers:
+        - name: cosmetic-websitessssssssss-4dd5788a
+          image: docker.io/phengbunath/cosmetic-websitessssssssss-4dd5788a:1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
