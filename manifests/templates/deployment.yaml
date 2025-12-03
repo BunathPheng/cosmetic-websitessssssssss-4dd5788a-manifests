@@ -22,4 +22,4 @@ spec:
           image: docker.io/phengbunath/cosmetic-websitessssssssss-4dd5788a:1
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
